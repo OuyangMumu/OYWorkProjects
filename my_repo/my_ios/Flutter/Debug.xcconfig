@@ -1,0 +1,14 @@
+//
+//  Debug.xcconfig
+//  my_ios
+//
+//  Created by ouyanggaojun on 2020/5/16.
+//  Copyright © 2020 ouyanggaojun. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Flutter.xcconfig"
+// 如果你是使用的pod管理你的项目，需要添加对pod的引用,XXX修改为自己项目的名称
+#include "Pods/Target Support Files/Pods-my_ios/Pods-my_ios.debug.xcconfig"
