@@ -105,6 +105,15 @@ flutter:
     - res/lottie/
     - packages/flutter_gallery_assets/animated_images/animated_flutter_stickers.webp
 
+    # assets-generator-begin
+    # res/images/*
+    - res/images/animated_flutter_lgtm.gif
+    - res/images/dart_side.png
+    - res/images/launcher_icon.png
+    - res/images/material_design_3.png
+    - res/images/material_design_4.jpg
+    # assets-generator-end
+
   fonts:
     - family: monospace
       fonts:
