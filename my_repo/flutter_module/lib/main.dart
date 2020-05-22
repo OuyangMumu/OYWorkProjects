@@ -39,13 +39,19 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     print('MyApp_build');
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Boost example',
-        builder: FlutterBoost.init(postPush: _onRoutePushed),
-        // onGenerateRoute: onGenerateRoute,
-        home: Container(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Boost example',
+      builder: FlutterBoost.init(postPush: _onRoutePushed),
+      // onGenerateRoute: onGenerateRoute,
+      home: Scaffold(
+        appBar: AppBar(title: Text('Flutter')),
+        body: Center(
+            child: Container(
           color: Colors.white,
-        ));
+          child: Text('flutter_model'),
+        )),
+      ),
+    );
   }
 
   void _onRoutePushed(
