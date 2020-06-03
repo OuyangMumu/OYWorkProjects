@@ -12,7 +12,6 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:oy_go_test/themes.dart';
 import 'package:oy_go_test/constant.dart';
-import 'r.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -37,9 +36,10 @@ class _MySplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        constraints: BoxConstraints.expand(),
-        color: Colors.white,
-        child: Image.asset(R.resImagesAnimatedFlutterLgtm));
+      constraints: BoxConstraints.expand(),
+      color: Colors.white,
+      child: Center(child: AppIcon),
+    );
   }
 }
 
@@ -48,9 +48,7 @@ class _MyMainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter Catalog",
-      theme: Provider.of<MyAppSettings>(context).isDarkMode
-          ? darkTheme
-          : lightThemme,
+      theme: Provider.of<MyAppSettings>(context).isDarkMode ? darkTheme : lightThemme,
       routes: AppRoutingTabel,
     );
   }
